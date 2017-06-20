@@ -1,0 +1,62 @@
+<!--
+Title: How to cook Chinese Food 
+
+FileName:Instructions.xsd
+Supporting Files: instructions.xml
+Author: Atif Tirmizi
+Professor: Schoenacher
+Assignment: Midterm Project
+Due Date: 10/23/2015 
+
+This is the xsd file for the instructions.xml file
+-->
+
+<xs:schema xmlns:xs= "http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="category" type="categoryType" />
+	<xs:attribute name="type" type="pType" />
+	
+	<xs:element name="products">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" type="xs:string"/>
+				<xs:element name="subtitle" type="xs:string"/>
+				<xs:element name="product" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute ref="categoryType">
+						<xs:sequence>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="serves" type="xs:string"/>
+							<xs:element name="calories" type="xs:string"/>
+							<xs:element name="price" type="xs:string">
+								<xs:complexType>
+									<xs:attribute ref="pType"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="description" type="xs:string"/>
+							<xs:element name="instructions">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="step" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:simpleType name="categoryType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Entrées"/>
+			<xs:enumeration value="Appetizers"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="pType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+</xs:schema>
+<!-- END -->

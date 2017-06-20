@@ -1,0 +1,11 @@
+<!ELEMENT products (product+)>
+
+<!ELEMENT product (name, ingredients)>
+<!ATTLIST product category (meat | sauces....)>
+
+<!ELEMENT ingredients (ingredient+)>
+<!ELEMENT ingredient (ingredientName, measurementQuantity, description?)>
+
+<!ELEMENT ingredientName (#PCDATA)>
+<!ELEMENT measurementQuanitity (#PCDATA)>
+<!ELEMENT description (#PCDATA)>

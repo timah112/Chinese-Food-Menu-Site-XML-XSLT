@@ -1,0 +1,121 @@
+<?xml version ="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+Title: How to cook Chinese Food 
+
+FileName: 
+Author: Atif Tirmizi
+Assignment: Final Website Project
+Due Date: 12/2/2015
+
+Display all the recipes and ingredients for the Beef category food. -->
+
+
+<?xml-stylesheet type="text/xsl" href="XSL/BeefCategory.xsl" ?>
+
+<!--XML Namespace 
+<products 
+	xmlns="http://finalProject/BeefCategory"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://finalProject/BeefCategory BeefCategory.xsd">
+	-->
+		 
+		 <!--LISTS ONLY THE FOODS THAT ARE MADE PRIMARILY FROM BEEF -->
+<products>
+	<product category = "Beef">
+		<name>Beef Egg Roll</name>
+			<serves>2</serves>
+			<calories>350</calories>
+			<price>2.50</price>
+			<description>Crunchy rollls covered in pastry sheets filled with chopped beef and vegetables</description>
+			<instructions>
+				<step>Mix all ingredients together in a large bowl</step>
+				<step>Add ground beef and mix well.</step>
+				<step>Cut wrappers into 4.</step>
+				<step>Place a teaspoon of mixture into one corner of wrapper, fold over bringing in the two sides.</step>
+				<step>Wet the top corner with some water and fold over.</step>
+				<step>Deep fry for about 5 minutes or until golden brown.</step>
+				<step>Serve with your favorite sauce.</step>
+			</instructions>		
+		<ingredients>
+			<ingredient>
+				<ingredientName>Ground Beef</ingredientName>
+				<measurement type = "Pound">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description>Lean</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Salt</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Garlic</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Water Chestnut</ingredientName>
+				<measurement type = "Cup">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description>Finely chopped</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Flour</ingredientName>
+				<measurement type = "Cup">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Water</ingredientName>
+				<measurement type = "Cup">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description>Pure</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Egg</ingredientName>
+				<measurement type = "Whole">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Beaten</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Soya Sauce</ingredientName>
+				<measurement type = "Tabalespoon">
+					<measurementQuantity>2</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Sugar</ingredientName>
+				<measurement type = "Tabalespoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Pepper</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Black</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Egg Roll Wraps</ingredientName>
+				<measurement type = "whole">
+					<measurementQuantity>5</measurementQuantity>
+				</measurement>
+				<description>Spring Roll Pastry</description>
+			</ingredient>
+		</ingredients>
+	</product>
+</products>

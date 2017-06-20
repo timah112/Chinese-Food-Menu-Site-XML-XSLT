@@ -1,0 +1,254 @@
+<?xml version ="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+Title: How to cook Chinese Food 
+
+FileName: 
+Author: Atif Tirmizi
+Assignment: Final Website Project
+Due Date: 12/2/2015
+
+This will display all of the entres of Chicken Category. It will list all of its' details in an organized manner -->
+
+<?xml-stylesheet type="text/xsl" href="XSL/ChickenCategory.xsl" ?>
+
+
+<!-- Namespace for this file
+<products 
+	xmlns="http://finalProject/ChickenCategory"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://finalProject/ChickenCategory ChickenCategory.xsd"> 
+	-->
+<products>
+	<!-- Chicken Category for XML -->
+	<product category="Chicken">
+		<name>General Tsao's Chicken</name>
+		<serves>4</serves>
+		<calories>850</calories>
+		<price>7.50</price>
+		<description>Crispy Chicken, covered in sauce that has a sweet and spicy mixture. Served with fried rice, and vegetables</description>
+		<instructions>
+			<step>In a large bowl, combine the soy sauce, and rice wine. Coat the chicken to the marinade mixture and let sit for 10 minutes.</step>
+			<step>In a small bowl, combine the chicken stock, sugar, soy sauce, rice vinegar, hoisin sauce, sesame oil, sugar, and the 1 teaspoon of cornstarch</step>
+			<step>Stir until the sugar and cornstarch are dissolved. Set the sauce aside.</step>
+			<step>In a large bowl or deep plate, toss the 1 1/2 cups cornstarch with the salt and pepper</step>
+			<step>Coat the marinated chicken in the cornstarch and shake off any excess before frying.</step>
+			<step>Heat the 3 cups of peanut or vegetable oil in your wok until it registers 350°F on an instant-read oil thermometer.</step>
+			<step>Working in 2 or 3 batches, add the first batch of chicken cubes and fry until golden brown on the outside and cooked through, about 4 to 5 minutes.</step>
+			<step>Remove the chicken with a slotted spoon and drain on paper towels. Repeat with the rest of the chicken</step>
+			<step>Drain the oil into a heatproof container and save for discarding.</step>
+			<step>Reheat the wok or skillet over medium-high heat. Add another 1 tablespoon of oil and swirl to coat the base and sides. </step>
+			<step>Add the dried chilis and garlic to the wok and stir-fry until just fragrant, about 20 seconds. </step>
+			<step>Pour in the sauce mixture and stir until thickened, about 1 to 2 minutes.</step>
+			<step>Return the chicken to the wok and stir well to coat with sauce.</step>
+			<step>Garnish with white sesame seeds and scallions</step>
+			<step>Serve with white rice and vegetables.</step>
+		</instructions>
+		
+		<!--List of all the ingredients and other data -->
+		<ingredients>
+			<ingredient>
+				<ingredientName>Chicken Thighs</ingredientName>
+				<measurement type = "Pound">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>boneless, skinless, sliced</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Corn Starch</ingredientName>
+				<measurement type = "Cups">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			
+			<ingredient>
+			<ingredientName>Salt</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>0.5</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Garlic</ingredientName>
+				<measurement type = "Cloves">
+					<measurementQuantity>2</measurementQuantity>
+				</measurement>
+				<description>Minced</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Sesame Seeds</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>White</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Soy Sauce</ingredientName>
+				<measurement type = "Tablespoons">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Hoisin Sauce</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Sugar</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>1</measurementQuantity>
+					</measurement>
+				<description></description>
+			</ingredient>
+		
+			<ingredient>
+			<ingredientName>Scallions</ingredientName>
+				<measurement type = "Whole">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Green parts thinly sliced</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Rice Wine</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Chinese</description>
+			</ingredient>
+			
+			
+		</ingredients>
+	</product>
+
+	
+	<!-- Start of another dish -->
+	<product category="Chicken">
+		<name>Sesame Chicken</name>
+			<serves>5</serves>
+			<calories>700</calories>
+			<price>7.00</price>
+		<description>Crispy sweet chicken drenched in sweet sauce and topped with sesame seeds. Served with noodles or rice.</description>
+			<instructions>
+				<step>Wash the chicken under cold running water, pat dry and trim off any excess fat</step>
+				<step>Cut the chicken into 1-inch cubes and put into a large mixing bowl.</step>
+				<step>Meanwhile, combine the remaining sauce ingredients in a mixing bowl and stir well to dissolve the cornstarch.</step>
+				<step>Gently pour into the saucepan with the fried ginger and garlic.</step>
+				<step>Stir as you pour because the cornstarch will thicken up pretty quickly</step>
+				<step>n a heavy-bottomed pot or deep-fryer heat enough oil to come halfway up the sides of the pot, to 375 degrees F</step>
+				<step>Fry the chicken, in small batches, until golden and crispy, about 5 to 6 minutes.</step>
+				<step>Remove the chicken using a wire mesh strainer and drain on paper towels.</step>
+				<step>Season with a little salt, to taste.</step>
+				<step>To serve, arrange the fried chicken on a platter and pour drizzle with the sauce</step>
+				<step>Sprinkle with a generous amount of toasted sesame seeds and garnish with scallions and cilantro sprigs</step>
+			</instructions>	
+		<ingredients>
+			<ingredient>
+				<ingredientName>Chicken Breasts</ingredientName>
+				<measurement type = "Pound">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description>Boneless, preferably up to 6 quantities</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Soy Sauce</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>6</measurementQuantity>
+				</measurement>
+				<description>low sodium</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Salt</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Kosher</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Flour</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>4</measurementQuantity>
+				</measurement>
+				<description>All purpose flour</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Corn Starch</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>4</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Water</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>4</measurementQuantity>
+				</measurement>
+				<description>Regular</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Sesame Oil</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>3</measurementQuantity>
+				</measurement>
+				<description>Toasted Oil</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Ginger</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Minced</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Peanut Oil</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>3</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Garlic</ingredientName>
+				<measurement type = "Clove">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Minced</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Sherry Vinegar</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>2</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Scalions</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>3</measurementQuantity>
+				</measurement>
+				<description>Finely chopped for garnish</description>
+			</ingredient>
+		
+		</ingredients>
+	</product>
+</products>

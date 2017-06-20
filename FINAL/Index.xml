@@ -1,0 +1,55 @@
+<?xml version ="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+Title: How to cook Chinese Food 
+
+FileName: compound
+Author: Atif Tirmizi
+Assignment: Final Website Project
+Due Date: 12/2/2015
+
+ This will just display a slide show of many pics of each of the foods that will be discussed 
+ -->
+
+ <?xml-stylesheet type="text/xsl" href="XSL/Index.xsl" ?>
+
+<!-- NamesPace 
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://finalProject/Index Index.xsd"
+		 xmlns="http://finalProject/Index.xsd">
+-->
+		 
+		 <!--HOME PAGE -->
+		 
+<!-- parent tag for food element -->
+<foodPictures>
+	<food picture="Images/General-Tso's-Chicken_2.jpg">
+		<foodName>General Tsao Chicken</foodName>
+	</food>
+	<food picture="Images/Sesame_Chicken.jpg">
+		<foodName>Sesame Chicken</foodName>
+	</food>
+	<food picture="Images/Beef_Egg_roll.jpg">
+		<foodName>Beef Egg Roll</foodName>
+	</food>
+	<food picture="Images/chinese_fried_rice.jpg">
+		<foodName>Chicken Fried Rice</foodName>
+	</food>
+	<food picture="Images/Vegetable_Fried_white_rice.jpg">
+		<foodName>Vegetable Fried Rice</foodName>
+	</food>
+	<food picture="Images/Shrimp_Fried_Rice.JPG">
+		<foodName>Shrimp Fried Rice</foodName>
+	</food>
+	<food picture="Images/White_Rice.jpg">
+		<foodName>White Rice</foodName>
+	</food>
+	<food picture="Images/Chinese_Noodles.jpg">
+		<foodName>Chinese Noodles</foodName>
+	</food>
+	<food picture="Images/chop_Sticks.jpg">
+		<foodName>Chop Sticks</foodName>
+	</food>
+	<food picture="Images/Fortune_cookies.jpg">
+		<foodName>Fortune Cookies</foodName>
+	</food>
+</foodPictures>

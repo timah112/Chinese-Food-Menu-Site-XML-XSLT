@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Namespace for this file -->
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns="http://finalProject/BeefCategory"
+			targetNamespace="http://finalProject/BeefCategory"
+			elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<!-- Russian Doll Design -->
+	<xs:element name="products">
+	<!-- Complex Type design -->
+		<xs:complexType>
+			<xs:sequence>
+	  <xs:element name="product" minOccurs="1" maxOccurs="unbounded">
+		<xs:complexType>
+		  <xs:sequence>
+			<xs:element maxOccurs="unbounded" name="name" type="xs:string" />
+			<xs:element maxOccurs="unbounded" name="serves" type="xs:int" />
+			<xs:element maxOccurs="unbounded" name="calories" type="xs:int" />
+			<xs:element maxOccurs="unbounded" name="price" type="xs:decimal"/>
+			<xs:element maxOccurs="unbounded" name="description" type="xs:string" />
+			<xs:element maxOccurs="unbounded" name="instructions">
+			  <xs:complexType>
+				<xs:sequence>
+				  <xs:element maxOccurs="unbounded" name="step" type="xs:string" />
+				</xs:sequence>
+			  </xs:complexType>
+			</xs:element>
+			<xs:element maxOccurs="unbounded" name="ingredients">
+			  <xs:complexType>
+				<xs:sequence>
+				  <xs:element maxOccurs="unbounded" name="ingredient">
+					<xs:complexType>
+					  <xs:sequence>
+						<xs:element name="ingredientName" type="xs:string" />
+						<xs:element name="measurement">
+						  <xs:complexType>
+						     <xs:sequence>
+  						       <xs:element name="measurementQuantity" type="xs:string"/>
+						     </xs:sequence>
+        						<xs:attribute name="type" use="required">
+          						<xs:simpleType>
+            						  <xs:restriction base="xs:string"/>
+          						</xs:simpleType>
+        						</xs:attribute>    
+						  </xs:complexType>
+						</xs:element>
+						<xs:element name="description" type="xs:string" />
+					  </xs:sequence>
+					</xs:complexType>
+				  </xs:element>
+				</xs:sequence>
+			  </xs:complexType>
+			</xs:element>
+		  </xs:sequence>
+		  <xs:attribute name="category" type="xs:string" />
+		</xs:complexType>
+	  </xs:element>
+	  </xs:sequence>
+	  </xs:complexType>
+	  </xs:element>
+</xs:schema>

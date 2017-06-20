@@ -1,0 +1,68 @@
+<!--
+Title: How to cook Chinese Food 
+
+FileName:Ingredients.xsd
+Supporting Files: Ingredients.xml
+Author: Atif Tirmizi
+Professor: Schoenacher
+Assignment: Midterm Project
+Due Date: 10/23/2015 
+
+This is the xsd Document for the Ingredients.xml file
+-->
+
+<xs:schema xmlns:xs= "http://www.w3.org/2001/XMLSchema">
+	<xs:attribute name="Category" type="categoryType" />
+	<xs:attribute name="type" type="qType" />
+	
+	<xs:simpleType name="categoryType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="chicken"/>
+			<xs:enumeration value="beef"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="qType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="pound"/>
+			<xs:enumeration value="cups"/>
+			<xs:enumeration value="teaspoon"/>
+			<xs:enumeration value="tablespoon"/>
+			<xs:enumeration value="cloves"/>
+			<xs:enumeration value="whole"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:element name="products">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="product" minOccurs="1" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="product">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="ingredients">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ingredient" minOccurs="1" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ingredientName" type="xs:string"/>
+										<xs:element name="measurementQuanitity" type="xs:string"/>
+										<xs:element name="description" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+<xs:schema>
+	
+<!-- END -->

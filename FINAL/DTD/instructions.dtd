@@ -1,0 +1,19 @@
+<!ELEMENT products (title, subtitle, product+)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT subtitle (#PCDATA)>
+
+<!ELEMENT product (name, serves, calories, price, description, instructions)>
+<!ATTLIST product category (Entrées | Appetizer) #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT serves (#PCDATA)>
+<!ELEMENT calories (#PCDATA)>
+
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price type CDATA #REQUIRED>
+
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT instructions (step+)>
+<!ELEMENT step (#PCDATA)>

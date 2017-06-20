@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns="http://finalProject/BeefCategory"
+			targetNamespace="http://finalProject/Index"
+			elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+
+<?xml version="1.0" encoding="utf-16"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foodPictures">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element maxOccurs="unbounded" name="food">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="foodName" type="xsd:string" />
+            </xsd:sequence>
+            <xsd:attribute name="picture" type="xsd:string" />
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

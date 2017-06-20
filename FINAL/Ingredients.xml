@@ -1,0 +1,211 @@
+<?xml version ="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+Title: How to cook Chinese Food 
+
+FileName: Ingredients.xml
+Author: Atif Tirmizi
+Professor: Schoenacher
+Assignment: Midterm Project
+Due Date: 10/23/2015 
+
+Useful Links for the food: http://appetiteforchina.com/recipes/general-tsos-chicken
+http://www.caloriecount.com/calories-general-tsos-chicken-i111989
+
+http://www.foodnetwork.com/recipes/tyler-florence/sesame-chicken-recipe.html
+
+This is the FIRST xml document(Ingredients)
+
+-->
+<?xml-stylesheet type="text/xsl" href="XSL/ChickenCategory.xsl" ?>
+
+<product category="Chicken">
+<name>General Tsao's Chicken</name>
+<ingredients>
+			<ingredient>
+				<ingredientName>Chicken Thighs</ingredientName>
+				<measurement type = "Pound">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>boneless, skinless, sliced</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Corn Starch</ingredientName>
+				<measurement type = "Cups">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			
+			<ingredient>
+			<ingredientName>Salt</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>0.5</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Garlic</ingredientName>
+				<measurement type = "Cloves">
+					<measurementQuantity>2</measurementQuantity>
+				</measurement>
+				<description>Minced</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Sesame Seeds</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>White</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Soy Sauce</ingredientName>
+				<measurement type = "Tablespoons">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Hoisin Sauce</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Sugar</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>1</measurementQuantity>
+					</measurement>
+				<description></description>
+			</ingredient>
+		
+			<ingredient>
+			<ingredientName>Scallions</ingredientName>
+				<measurement type = "Whole">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Green parts thinly sliced</description>
+			</ingredient>
+			
+			<ingredient>
+			<ingredientName>Rice Wine</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Chinese</description>
+			</ingredient>
+			
+			
+		</ingredients>
+	</product>
+
+	
+	<!-- Start of another dish -->
+	<product category="Chicken">
+		<name>Sesame Chicken</name>
+			<ingredients>
+			<ingredient>
+				<ingredientName>Chicken Breasts</ingredientName>
+				<measurement type = "Pound">
+					<measurementQuantity>1.5</measurementQuantity>
+				</measurement>
+				<description>Boneless, preferably up to 6 quantities</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Soy Sauce</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>6</measurementQuantity>
+				</measurement>
+				<description>low sodium</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Salt</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Kosher</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Flour</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>4</measurementQuantity>
+				</measurement>
+				<description>All purpose flour</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Corn Starch</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>4</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Water</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>4</measurementQuantity>
+				</measurement>
+				<description>Regular</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Sesame Oil</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>3</measurementQuantity>
+				</measurement>
+				<description>Toasted Oil</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Ginger</ingredientName>
+				<measurement type = "Teaspoon">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Minced</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Peanut Oil</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>3</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Garlic</ingredientName>
+				<measurement type = "Clove">
+					<measurementQuantity>1</measurementQuantity>
+				</measurement>
+				<description>Minced</description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Sherry Vinegar</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>2</measurementQuantity>
+				</measurement>
+				<description></description>
+			</ingredient>
+			
+			<ingredient>
+				<ingredientName>Scalions</ingredientName>
+				<measurement type = "Tablespoon">
+					<measurementQuantity>3</measurementQuantity>
+				</measurement>
+				<description>Finely chopped for garnish</description>
+			</ingredient>
+		
+		</ingredients>
+		</product>

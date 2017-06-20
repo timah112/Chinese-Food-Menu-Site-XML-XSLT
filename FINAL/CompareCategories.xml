@@ -1,0 +1,49 @@
+<?xml version ="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+Title: How to cook Chinese Food 
+
+FileName: CompareCategories
+Author: Atif Tirmizi
+Assignment: Final Website Project
+Due Date: 12/2/2015
+ This file compares each type of food with just listing all of their details in an organized way -->
+
+<!-- Connecting the xml document to the xslt -->
+<?xml-stylesheet type="text/xsl" href="XSL/CompareCategories.xsl" ?>
+
+<!--XML Namespace 
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		 xsi:schemaLocation="http://finalProject/CompareCategory CompareCategory.xsd"
+		 xmlns="http://finalProject/CompareCategory">
+-->
+
+	<!--Beginning of the first dish -->
+<products>
+	<product category="Chicken">
+		<name>General Tsao's Chicken</name>
+		<serves>4</serves>
+		<calories>850</calories>
+		<price>7.50</price>
+	</product>
+	
+	<product category="Chicken">
+		<name>Sesame Chicken</name>
+		<serves>5</serves>
+		<calories>700</calories>
+		<price>7.00</price>	
+	</product>	
+	
+	<product category = "Beef">
+		<name>Beef Egg Roll</name>
+		<serves>2</serves>
+		<calories>350</calories>
+		<price>2.50</price>		
+			
+	</product>		
+</products>		
+			
+			
+			
+			
+			
+			
